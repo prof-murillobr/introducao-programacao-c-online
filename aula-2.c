@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 int main () {
-    int variavelA;
-    int variavelB;
-    int resultado;
+    int notaTrabalho; 
+    int notaAv2;
+    int somaDasNotas;
+    int somaEMaior;
 
-    printf("Por favor, digite um número: ");
-    scanf("%d", &variavelA);
+    printf("Insira sua nota de trabalho: ");
+    scanf("%d", &notaTrabalho);
+    printf("Nota do trabalho registrada: %d \n", notaTrabalho);
 
-    printf("Agora, digite outro número: ");
-    scanf("%d", &variavelB);
+    printf("\nInsira sua nota da AV2: ");
+    scanf("%d", &notaAv2);
+    printf("Nota da AV2 registrada: %d \n", notaAv2);
 
-    resultado = variavelA * variavelB;
+    somaDasNotas = notaTrabalho + notaAv2;
 
-    printf("\tO resultado da multiplicação de %d por %d é: %d \n", variavelA, variavelB, resultado);
+    printf("A soma da nota do trabalho (%d) e da AV2 (%d) é: %d \n", notaTrabalho, notaAv2, somaDasNotas);
+
+    somaEMaior = somaDasNotas != 4;
+
+    printf("O resultado da verificação é: %d \n", somaEMaior);
 
     return 0;
 }
