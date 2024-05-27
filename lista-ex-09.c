@@ -49,6 +49,5 @@ int main() {
     printf("\n\nQuantidade de notas de 2: %d\n", quantidade_notas_2);
     printf("\n\nQuantidade de notas de 1: %d\n", quantidade_notas_1);
 
-
     return 0;
 }
